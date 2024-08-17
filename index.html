@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | João Simonis</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header> <!--início do cabeçalho-->
+        <div class="interface">
+            <div>
+                <a href="#" class="nome">João Simonis</a> <!--uma div que vai conter meu nome-->
+            </div>
+            <nav class="navbar"> <!--barra de navegação-->
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#sobre-mim" rel="next" target="_self">Sobre mim</a></li>
+                    <li><a href="#formacao-educacional" rel="next" target="_self">Formação Educacional</a></li>
+                </ul>
+            </nav>
+            <div class="div-contato"> <!--uma div que vai ter meu botão de contato-->
+                <a href="#formulario" rel="next" target="_self">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div> <!--final do cabeçalho-->
+    </header>
+    <main> <!--início do meu método principal-->
+        <section class="topo-do-site"><!--sessão do topo do meu site-->       
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>OLÁ, MEU NOME É JOÃO SIMONIS E EU SOU DESENVOLVEDOR WEB<span>.</span></h1>
+                        <p>Formado em Educação Física Bacharelado, estou em transição de carreira e, desde 2023, tenho estudado para me tornar um desenvolvedor web.</p>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="imgs/profile-pic.png" alt="Foto de Perfil">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sobre" id="sobre-mim"><!--sessão sobre mim-->
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="imgs/foto-sobremim.png" alt="Minha foto">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU JOÃO SIMONIS.</span></h2>
+                        <p>Com 24 anos de idade e formação em Educação Física Bacharelado, minha jornada profissional tomou um novo rumo em julho de 2023, quando descobri minha paixão pela programação. Decidi então embarcar em uma transformação de carreira, dedicando-me aos estudos de programação.</p>
+                        <p>Por ser uma área muito ampla, no começo foi um pouco difícil para entender por qual caminho eu deveria seguir. Hoje, o foco dos meus estudos está no desenvolvimento web e tenho aprendido muito através de cursos pela internet. Também faço faculdade de Análise e Desenvolvimento de Sistemas pela UNINTER, com previsão de conclusão em 2026/2.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="habilidades" id="formacao-educacional"> <!--sessão da formação educacional-->
+            <div class="interface">
+                <h2 class="titulo">FORMAÇÃO <span>EDUCACIONAL</span></h2>
+                <div class="flex"> <!--aqui vou colocar várias logos com habilidades que aprendi-->
+                    <div class="habilidades-box">
+                        <img src="imgs/logo-javascript-70px.png" alt="Logo JavaScript">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="habilidades-box">
+                        <img src="imgs/logo-html5-70px.png" alt="Logo HTML5">
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="habilidades-box">
+                        <img src="imgs/logo-css3-70px.png" alt="Logo CSS3">
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="habilidades-box">
+                        <img src="imgs/logo-nodejs-70px.png" alt="Logo Node.js">
+                        <h3>Node.js</h3>
+                    </div>
+                    <div class="habilidades-box">
+                        <img src="imgs/logo-mysql-70px.png" alt="Logo MySQL">
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="habilidades-box">
+                        <img src="imgs/logo-java-70px.png" alt="Logo Java">
+                        <h3>Java</h3>
+                    </div>
+                </div><!--final dos logos das habilidades-->
+                <p class="paragrafo">Comecei meus estudos em julho de 2023, com lógica de programação. O primeiro contato com uma linguagem de programação foi o Java e depois estudei a minha primeira linguagem de dados que foi o MySQL. Foi a partir daí que comecei a me dedicar 100% os estudos para desenvolvimento web, com HTML5, CSS3 e JavaScript. A faculdade em Análise e Desenvolvimento de Sistemas pela UNINTER é também uma base sólida para a minha formação profissional.</p>
+            </div>
+        <section id="formulario" class="formulario"> <!--sessão do meu formulário (somente a parte visual!)-->
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO</span></h2>
+                <form action="">
+                    <label for="name">
+                        <h3>Nome</h3>
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="Ex.: João Guilherme" required><!--input para o nome-->
+                    <label for="email">
+                        <h3>E-mail</h3>
+                    </label>
+                    <input type="text" name="email" id="email" placeholder="Ex.: joao@email.com" required><!--input para o texto-->
+                    <label for="celular">
+                        <h3>Telefone de contato</h3>
+                    </label>
+                    <input type="text" name="celular" id="celular" placeholder="Ex.: (00) 00000-0000"><!--input para o celular-->
+                    <label for="mensagem">
+                        <h3>Mensagem</h3>
+                    </label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite a sua mensagem aqui..." required></textarea><!--colocar mensagem-->
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR"> <!--mesmo tendo um botão para enviar, fiz apenas para contar na parte visual-->
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main> <!--final do meu método principal-->
+    <footer> <!--início do rodapé-->
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="nome-footer">
+                        <a href="#" class="nome">João Simonis</a>
+                    </div>
+                    <div class="logo-icones">
+                        <a href="https://www.linkedin.com/in/joaosimonis/" rel="next" target="_blank"><img src="imgs/logo-linkedin50px.png" alt="Logo LinkedIn"></a>
+                        <a href="https://github.com/joaosimonis" rel="next" target="_blank"><img src="imgs/logo-github50px.png" alt="Logo GitHub"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="line-footer borda"> <!--aqui vou estilizar uma linha roxa horizontal-->              
+                <div class="flex">
+                    <p><a href="mailto:joaosimonis2000@gmail.com" target="_blank" rel="next">joaosimonis2000@gmail.com</a></p> <!--link que permite o usuário enviar um e-mail para o endereço fornecido-->
+                    <p><a href="curriculo/curriculo-joao_simonis.pdf" download="curriculo-joao_simonis.pdf" type="application/pdf">Link para baixar meu currículo</a></p><!--link baixável do meu currículo-->
+                </div>
+            </div>
+        </div>
+    </footer> <!--final do meu rodapé-->
+</body>
+</html>
